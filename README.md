@@ -1,10 +1,6 @@
-# legal_NER
-#### This repo is associated with the paper "Named Entity Recognition in Indian court judgments" accepted at NLLP 2022 workshop at EMNLP.
-#### For easy usage of all available OpenNyai models refer to our [OpenNyai Libray](https://github.com/OpenNyAI/Opennyai)
+# Legal-Case-Outcome-Prediction
 
-#### Try our models on hugging face [en_legal_ner_trf](https://huggingface.co/opennyaiorg/en_legal_ner_trf) and [en_legal_ner_sm](https://huggingface.co/opennyaiorg/en_legal_ner_sm)
-
-## 1. Why Seperate NER for Indian Court Judgments?
+## 1. Why do we need to seperate NER for Indian Court Judgments?
 
 Named Entities Recognition is commonly studied problem in Natural Language Processing and many pre-trained models are
 publicly available. However legal documents have peculiar named entities like names of petitioner, respondent, court,
@@ -13,7 +9,7 @@ spacy. Hence there is a need to develop a Legal NER model. But ther are no publi
 this task for Indian courts. Due to peculiarity of Indian legal processes and terminoligies used, it is important to
 develop seperate legal NER for Indian court judgment texts.
 
-## 2. Which Legal Entities are covered?
+## 2. Which all Legal Entities are covered?
 
 Some entities are extracted from Preamble of the judgements and some from judgement text. Preamble of judgment contains
 formatted metadata like names of parties, judges, lawyers,date, court etc. The text following preamble till the end of
